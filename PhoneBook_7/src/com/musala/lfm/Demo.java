@@ -38,6 +38,10 @@ public class Demo {
 		
 		System.out.println(contact.findPair());
 		
+		contact.addCalls();
+		
+		contact.displayContacts();
+		
 	}
 	
 	static void setTree(Set<String> phonebook) throws IOException {

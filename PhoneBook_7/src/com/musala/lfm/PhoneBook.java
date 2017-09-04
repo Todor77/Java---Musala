@@ -38,6 +38,12 @@ public class PhoneBook {
 		}
 		
 	}
+	public void setNumberCall(String number) {
+		
+		this.number = number;
+	}
+	
+	
 	public boolean setNumber(String number) {
 		
 		lenn = number.length();

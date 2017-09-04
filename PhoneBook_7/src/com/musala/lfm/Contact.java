@@ -100,7 +100,30 @@ public class Contact {
 			
 			
 			System.out.print(itr.next());
+			System.out.println();
 			
+		}
+		
+	}
+	
+	public void addCalls() {
+		System.out.println();
+		System.out.println("Enter name add calls");
+		
+		String name = scanner.next();
+		String n;
+		System.out.println("Enter how much calls");
+		n = scanner.next();
+		
+		 Iterator<PhoneBook> iterator = list.iterator();
+		
+		while(iterator.hasNext()) {
+			PhoneBook phone = iterator.next();
+			
+			if(phone.getName().equals(name)) {
+				
+				phone.setNumberCall(phone.getNumber()+ " "+ n);
+			}
 		}
 		
 	}
